@@ -125,7 +125,7 @@ button {
     }
 }
 /* laptop media query */
-@media (min-width:990px) and (max-width:1200px) {
+@media (min-width:991px) and (max-width:1200px) {
     body {
         background: orangered;
     }
