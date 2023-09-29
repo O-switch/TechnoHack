@@ -12,10 +12,12 @@ body {
     justify-content: center;
     font-family: 'Courier New', Courier, monospace;
 }
-p{
+
+p {
     font-weight: 600;
     font-style: oblique;
 }
+
 .container {
     box-shadow: 0px 0px 3px 0px rgb(189, 189, 189);
     background: transparent;
@@ -42,7 +44,7 @@ p{
     border: none;
     background-color: aquamarine;
     grid-gap: 2px;
-    margin-top: 5px;
+    padding: 5px;
 }
 
 button {
@@ -53,49 +55,84 @@ button {
     border-radius: 10px;
 }
 
-.del,.equal {
+.del,
+.equal {
     background: green;
     color: #fff;
     transition: background .3s ease-in;
 }
-.del:focus,.equal:focus{
+
+.del:focus,
+.equal:focus {
     background: rgb(10, 160, 42);
 }
+
 .number {
     background: #7e7e7e;
     color: aquamarine;
     animation: slideLeft 2s ease;
 }
-.number:focus{
+
+.number:focus {
     background: #333;
 }
-.operator{
+
+.operator {
     background: #fd6129;
     color: #fff;
     animation: slideRight 2s ease;
 }
-.operator:focus{
+
+.operator:focus {
     background: #ce4817;
 }
-.clear{
+
+.clear {
     background-color: #d62e58;
     color: #fff;
 }
+
 @keyframes slideLeft {
-    0%{
-      transform: translateX(-100%);  
+    0% {
+        transform: translateX(-100%);
     }
-    
+
 }
+
 @keyframes slideRight {
-    0%{
-      transform: translateX(100%);  
+    0% {
+        transform: translateX(100%);
     }
-    
+
 }
+
 @keyframes slideTop {
-    0%{
-      transform: translateY(-100%);  
+    0% {
+        transform: translateY(-100%);
     }
-    
+
+}
+/* phone media query */
+@media (max-width:480px) {
+    body {
+        background: salmon;
+    }
+}
+/* tablet media query */
+@media (min-width:481px) and (max-width:990px) {
+    body {
+        background: rgb(13, 105, 117);
+    }
+}
+/* laptop media query */
+@media (min-width:990px) and (max-width:1200px) {
+    body {
+        background: orangered;
+    }
+}
+/* Desktop media query */
+@media (min-width:1201px) {
+    body {
+        background: seagreen;
+    }
 }
