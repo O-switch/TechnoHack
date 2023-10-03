@@ -15,7 +15,11 @@ arr.forEach(button => {
         } else if (e.target.innerText == 'D') { //deleting number by -1
             result = result.substring(0, result.length - 1)
             display.innerText = result
-        } else {
+        } else if (e.target.innerText == '%') {
+            result = eval(result / 100)
+            display.innerText = result
+        }
+         else {
             result += e.target.innerText
             display.innerText = result
         }

@@ -16,6 +16,7 @@ body {
 p {
     font-weight: 600;
     font-style: oblique;
+    color:#bbb;
 }
 
 .container {
@@ -127,7 +128,7 @@ button {
 /* laptop media query */
 @media (min-width:991px) and (max-width:1200px) {
     body {
-        background: orangered;
+        background: #97045b;
     }
 }
 /* Desktop media query */
